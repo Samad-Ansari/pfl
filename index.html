@@ -1,0 +1,266 @@
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="dist/rpgui.css">
+	<link  rel="stylesheet" href="style.css">	
+  <script type="text/javascript" src="dist/rpgui.js"></script>
+
+  <style type="text/css">
+		#leftside {
+			float: left;
+      left: 30px;
+      position: relative;
+			width: 30%;
+			height: 100%;
+      margin-top: 20px;
+		}
+
+		#rightside {
+			float: right;
+			width: 70%;
+			height: 100%;
+      margin-top: 20px;
+		}
+
+    .image-passport {
+      border: 1px solid #ddd; 
+      border-radius: 4px; 
+      padding: 5px; 
+      width: 100px;
+    }
+
+    .image-passport:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+   
+	</style>
+	<title>Game</title>
+  </head>
+  <body>
+    <div class="home-modal"  style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;">
+	      <div class="rpgui-content" >
+          <div class="rpgui-container framed">
+            <p>Home Page</p>
+          </div>
+        </div>
+		</div>
+
+    <div class="about-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -390px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed-golden-2" style="height: 400px; width: 250px;left:20px; top:50px;">
+                
+              <h3>Languages: </h3><hr/>
+              <label>Javascript:</label>
+              <div id="hp-bar" data-value="0.7" class="rpgui-progress red"></div>
+    
+              <label>C++: </label>
+                <div id="mana-bar" data-value="0.5" class="rpgui-progress blue"></div>
+    
+                <label>Python: </label>
+                <div id="stamina-bar" data-value="0.6" class="rpgui-progress green"></div>
+            </div>
+      
+        <div class="rpgui-container framed-golden-2" style="left: 300px; top:50px;">
+              <h3>Skills: </h3><hr/>
+               <p>Nodejs, Machine Learning, <br> Competitive Programming, Angular, <br>Data Structure & Algorithm</p>
+            </div>
+      </div>
+    </div>
+
+    
+    <div class="intro-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -350px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed" >
+                      <h3></span>Intro</h3>
+                  <hr/> 
+            <p>
+                    Hi there, My name is Samad Ansari.
+                  </p>
+                  <div id="leftside">
+                    <img class="image-passport" src="dist/img/passport.png">
+                  </div>
+                  <p id="rightside">
+                    I'm a Software Engineering student.<br>
+                    I love playing video games <br/> and that's why
+                    I build my website just like it <br>
+                      Try it now ! 
+                  </p>
+            </div>
+      </div>
+    </div>
+
+    <div class="contact-arrow-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed" >
+        <p>Contact Page</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="project-arrow-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed">
+          <p>Project Page</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -220px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed" style="width: 400px">
+                <hr />
+          <form method="post">
+                <label>Name: </label>
+                <input type="text" name="firstname"  placeholder="Hero name">
+                <br/><br/>
+    
+                <label>Subject:</label>
+                <input type="text" name="subject"  placeholder="Hero subject">
+                <br /><br />
+                
+                <label>Email:</label>
+                <input type="text" name="email"  placeholder="Hero email">
+                <br /><br />
+    
+                <label>Message:</label>
+                <textarea rows="3" cols="50" name="message">Message to the builder</textarea>
+                <br/><br/>
+                <button class="rpgui-button" type="button" style="width:100%" onclick="sendEmail()"><p>Send</p></button>
+          </form>
+                
+            </div>
+    
+      </div>
+    </div>
+
+    <div class="social-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -160px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed">
+          <div style="margin: 5px;">
+            <img style="width: 28; height: 28;" src="dist/img/icons/potion-blue.png"><span><a href="https://www.linkedin.com/in/samad-ansari-21221b197/">:Linkdin</a></span>
+            </div>
+            <div style="margin: 5px;">
+            <img style="width: 28; height: 28;" src="dist/img/icons/potion-red.png"><span><a href="https://www.instagram.com/one_crazy_soul_/">:Instagram</a></span>
+            </div>
+            <div style="margin: 5px;">
+            <img style="width: 28; height: 28;" src="dist/img/icons/potion-green.png"><span><a href="https://github.com/Samad-Ansari">:Github</a></span>
+            </div>
+        
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-more-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed-grey" style="width: 305px;">
+            <span>samad06june@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="live-project1-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -180px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed">
+            <button class="rpgui-button" type="button" style="width:100%"><p>Project 1</p></button> 
+            <p>This is the project <br/> Build for helping people </p> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="live-project2-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -160px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed">
+            <button class="rpgui-button" type="button" style="width:100%"><p>Project 2</p></button> 
+            <p>This is the project <br/> Build for helping people </p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="live-project3-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -160px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed">
+            <button class="rpgui-button" type="button" style="width:100%"><p>Project 3</p></button> 
+            <p>This is the project <br/> Build for helping people </p> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="repository-modal" style="position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -160px;">
+      <div class="rpgui-content">
+        <div class="rpgui-container framed" >
+        
+          <button class="rpgui-button" type="button" style="width:100%"><p>Repository</p></button>
+          <br /><hr />
+         <p>
+          <a href="https://github.com/Samad-Ansari">Click for More</a></p>
+      </div>
+      </div>
+    </div>
+
+
+
+	  
+	  
+    <canvas></canvas>
+  </body>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  <script type="text/javascript" src="mail.js"></script>
+  <script type="text/javascript" src="modal.js"></script>
+  <script type="text/javascript" src="engine-01.js"></script>
+  <script type="text/javascript" src="game-01.js"></script>
+  <script type="text/javascript" src="display-01.js"></script>  
+  <script type="text/javascript" src="controller-01.js"></script>
+  <script type="text/javascript" src="main-01.js"></script>
+
+</html>
