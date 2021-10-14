@@ -16,6 +16,6 @@ function sendEmail() {
   Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${mesg}`,
 
   }).then(function (message) { 
-  alert("mail sent successfully")
+    document.getElementById("myForm").reset();
   }); 
   }
