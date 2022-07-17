@@ -1,6 +1,6 @@
 function sendEmail() {
   var sender= "samadbat2000@gmail.com";
-  var pswd= "pcsnchmagnweekrn";
+  var pswd= "SamadAnsari123";
   var reciever= "samad06june@gmail.com";
   var name = Form.firstname.value;
   var subject = Form.subject.value;
